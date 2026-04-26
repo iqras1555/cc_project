@@ -1,4 +1,4 @@
-# devops-mini-project
+# cc-mini-project
 
 - **Feature branches** → Only Build + Test runs
 - **Main branch** → Full pipeline including Docker + Deploy
@@ -58,11 +58,11 @@ Image available at:
 
 ## 👩‍💻 Author
 
-**Manvhi Pipriya**
-- GitHub: [@manvhi](https://github.com/manvhi)
+**iqra shaikh**
+- GitHub: 
 
 ## 👩‍💻 Contributor
 
 Pranali Nikose
 Iqra Shaikh
-Apurva Garadkar
+Sanika pawar
