@@ -1,39 +1,50 @@
-# cc-mini-project
+# 🚀 CC Mini Project
 
-- **Feature branches** → Only Build + Test runs
-- **Main branch** → Full pipeline including Docker + Deploy
+This project demonstrates a complete CI/CD pipeline using GitHub Actions, Docker, and cloud deployment.
 
 ---
 
-## 📦 Run with Docker (Easiest)
+## ⚙️ CI/CD Pipeline
 
-No Java or Maven needed — just Docker!
+* **Feature branches** → Build + Test stages
+* **Main branch** → Full pipeline (Build + Test + Docker + Deploy)
+
+---
+
+## 📦 Run with Docker (Recommended)
+
+No need to install Java or Maven.
+
 ```bash
-docker pull manvhipipriya/devops-app:latest
-docker run -p 8080:8080 manvhipipriya/devops-app:latest
+docker pull iqras1555/cc-project:latest
+docker run -p 8080:8080 iqras1555/cc-project:latest
 ```
 
-Open browser: [http://localhost:8080](http://localhost:8080)
+👉 Open in browser:
+http://localhost:8080
 
 ---
 
 ## 💻 Run Locally from Source
+
 ```bash
-git clone https://github.com/manvhi/devops-mini-project.git
-cd devops-mini-project/devops-app
+git clone https://github.com/iqras1555/cc_project.git
+cd cc_project/cc-app
 ./mvnw spring-boot:run
 ```
 
-Open browser: [http://localhost:8080](http://localhost:8080)
+👉 Open in browser:
+http://localhost:8080
 
 ---
 
 ## 🧪 Run Tests
+
 ```bash
-# Run JUnit API tests
+# Run JUnit tests
 ./mvnw test -Dtest=DevopsdemoApplicationTests
 
-# Run Selenium UI tests (requires app running on port 8080)
+# Run Selenium tests (app must be running)
 ./mvnw test -Dtest=SeleniumTest
 ```
 
@@ -41,28 +52,38 @@ Open browser: [http://localhost:8080](http://localhost:8080)
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /tasks | Get all tasks |
-| POST | /tasks | Add a new task |
-| DELETE | /tasks/{index} | Delete task by index |
+| Method | Endpoint    | Description          |
+| ------ | ----------- | -------------------- |
+| GET    | /tasks      | Get all tasks        |
+| POST   | /tasks      | Add new task         |
+| DELETE | /tasks/{id} | Delete task by index |
 
 ---
 
 ## 🐳 Docker Hub
 
-Image available at:
-👉 [https://hub.docker.com/r/manvhipipriya/devops-app](https://hub.docker.com/r/manvhipipriya/devops-app)
+👉 https://hub.docker.com/r/iqras1555/cc-project
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Contributors
 
-**iqra shaikh**
-- GitHub: 
+* Iqra Shaikh
+* Pranali Nikose
+* Sanika Pawar
 
-## 👩‍💻 Contributor
+---
 
-Pranali Nikose
+## 🧠 Project Highlights
+
+* CI/CD using GitHub Actions
+* Dockerized Spring Boot application
+* Cloud deployment using Render
+* Automated testing (JUnit + Selenium)
+
+---
+
+## 📌 Author
+
 Iqra Shaikh
-Sanika pawar
+GitHub: https://github.com/iqras1555
