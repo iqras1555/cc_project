@@ -1,7 +1,7 @@
 # Step 1: Build stage
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 # force rebuild
-RUN echo "build trigger v1"
+RUN echo "build-2"
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
