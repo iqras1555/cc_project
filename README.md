@@ -44,15 +44,7 @@ http://localhost:8080
 
 ---
 
-## 🧪 Run Tests
 
-```bash
-# Run JUnit tests
-./mvnw test -Dtest=DevopsdemoApplicationTests
-
-# Run Selenium tests (app must be running)
-./mvnw test -Dtest=SeleniumTest
-```
 
 ---
 
